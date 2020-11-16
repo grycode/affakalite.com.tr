@@ -1,0 +1,30 @@
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--c-primary);
+  border-radius: 2px;
+  color: white;
+  font-weight: 300;
+  transition: all 0.15s ease-in 0s;
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.secondary {
+  border: 2px solid white;
+  background-color: transparent;
+  position: relative;
+
+  &:hover {
+    border-color: var(--c-primary);
+    background-color: var(--c-primary);
+
+    &:before {
+      width: 100%;
+    }
+  }
+}

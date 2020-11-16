@@ -1,0 +1,29 @@
+.hero {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #f05858d1 2rem,
+    #ddbbff00
+  ) !important;
+  opacity: 1 !important;
+
+  h2 {
+    color: white;
+    font-weight: bold;
+  }
+
+  p {
+    @media (min-width: 768px) {
+      max-width: 30vw;
+    }
+  }
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
