@@ -8,6 +8,8 @@ import styles from "./header.module.scss"
 
 export default function Header() {
   const [isOpen, setOpen] = React.useState(false)
+  const [kurumsalSubMenu, setKurumsalSubMenu] = React.useState(false)
+  const [hizmetlerimizSubMenu, setHizmetlerimizSubMenu] = React.useState(false)
 
   return (
     <StaticQuery
@@ -30,17 +32,87 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" activeClassName={styles.active}>
+                  <Link
+                    to="#"
+                    onClick={e => setKurumsalSubMenu(!kurumsalSubMenu)}
+                    activeClassName={styles.active}
+                    className={styles.hasSub}
+                  >
                     Kurumsal
+                    <ul
+                      style={{ display: kurumsalSubMenu ? "block" : "none" }}
+                      className={styles.subMenu}
+                    >
+                      <li>
+                        <Link to="/hakkimizda" activeClassName={styles.active}>
+                          Hakkimizda
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/kalite-politikamiz"
+                          activeClassName={styles.active}
+                        >
+                          Kalite Politikamız
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" activeClassName={styles.active}>
+                          Belgelerimiz
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" activeClassName={styles.active}>
+                          İnsan Kaynakları
+                        </Link>
+                      </li>
+                    </ul>
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" activeClassName={styles.active}>
+                  <Link
+                    to="#"
+                    onClick={e =>
+                      setHizmetlerimizSubMenu(!hizmetlerimizSubMenu)
+                    }
+                    activeClassName={styles.active}
+                    className={styles.hasSub}
+                  >
                     Hizmetlerimiz
+                    <ul
+                      style={{
+                        display: hizmetlerimizSubMenu ? "block" : "none",
+                      }}
+                      className={styles.subMenu}
+                    >
+                      <li>
+                        <Link to="/hakkimizda" activeClassName={styles.active}>
+                          Hakkimizda
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/kalite-politikamiz"
+                          activeClassName={styles.active}
+                        >
+                          Kalite Politikamız
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" activeClassName={styles.active}>
+                          Belgelerimiz
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" activeClassName={styles.active}>
+                          İnsan Kaynakları
+                        </Link>
+                      </li>
+                    </ul>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" activeClassName={styles.active}>
+                  <Link to="/teklif-iste" activeClassName={styles.active}>
                     Teklif İste
                   </Link>
                 </li>
