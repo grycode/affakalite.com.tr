@@ -1,6 +1,7 @@
 import React from "react"
 import TopBar from "../top-bar"
 import Header from "../header"
+import Footer from "../footer"
 import styles from "./layout.module.scss"
 
 export default function Layout({ children }) {
@@ -9,6 +10,7 @@ export default function Layout({ children }) {
       <TopBar />
       <Header />
       <main className={styles.layout}>{children}</main>
+      <Footer />
     </>
   )
 }

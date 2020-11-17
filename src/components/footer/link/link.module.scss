@@ -1,0 +1,19 @@
+.item {
+  border-bottom: 1px solid #505152;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.2s ease 0s;
+
+  svg {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    color: var(--c-accent);
+  }
+}

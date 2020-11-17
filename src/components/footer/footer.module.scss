@@ -1,0 +1,36 @@
+.footer {
+  background-color: #363839;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #bfbfbf;
+  border-top: 12px solid #e9eaee;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 2rem;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.copyright {
+  background-color: #282a2b;
+  border-top: 1px solid #4b4c4d;
+  color: #8c8989;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.copyrightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

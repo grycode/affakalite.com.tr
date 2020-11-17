@@ -1,0 +1,29 @@
+.box {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+
+  &:hover {
+    .icon {
+      background-color: #f6f6f6;
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+  border: 1px solid #f6f6f6;
+  transition: all 0.2s ease 0s;
+}
+
+.content {
+  padding: 1rem;
+}
