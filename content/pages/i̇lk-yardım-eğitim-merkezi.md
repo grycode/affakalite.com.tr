@@ -2,6 +2,7 @@
 title: İlk Yardım Eğitim Merkezi
 slug: ilk-yardim-egitim-merkezi
 date: 2020-11-17T15:52:03.403Z
+image: /assets/images/uploads/ilk_yardim_1.jpg
 ---
 **İlkyardım nedir?**
 
