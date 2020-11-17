@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: grycode/affakalite
+media_folder: static/assets/images/uploads
+public_folder: /assets/images/uploads
+extension: mdx
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: slug, label: Slug }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Featured Image, widget: image, required: false }
+      - { name: body, label: Body, widget: markdown }
+  - name: page
+    label: Pages
+    folder: content/pages
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: slug, label: Slug }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Featured Image, widget: image, required: false }
+      - { name: body, label: Body, widget: markdown }

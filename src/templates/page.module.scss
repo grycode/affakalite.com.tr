@@ -1,0 +1,34 @@
+.content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contentWithRightImage {
+  display: grid;
+  grid-gap: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+:global(.embedVideo-container) {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+:global(.embedVideo-container) iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:global(.gatsby-resp-image-figure) {
+  text-align: center;
+  background-color: #efefef;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}

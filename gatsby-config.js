@@ -37,6 +37,37 @@ module.exports = {
         path: `${__dirname}/static/assets/images`,
       },
     },
+
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              related: false,
+              noIframeBorder: true,
+              containerClass: "embedVideo-container",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              showCaptions: true,
+            },
+          },
+        ],
+      },
+    },
   ],
 }

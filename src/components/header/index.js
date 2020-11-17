@@ -69,12 +69,15 @@ export default function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/" activeClassName={styles.active}>
+                      <Link to="/belgelerimiz" activeClassName={styles.active}>
                         Belgelerimiz
                       </Link>
                     </li>
                     <li>
-                      <Link to="/" activeClassName={styles.active}>
+                      <Link
+                        to="/insan-kaynaklari"
+                        activeClassName={styles.active}
+                      >
                         İnsan Kaynakları
                       </Link>
                     </li>
@@ -112,14 +115,6 @@ export default function Header() {
                         activeClassName={styles.active}
                       >
                         İlk Yardım Eğitim Merkezi
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/cevre-danismanligi"
-                        activeClassName={styles.active}
-                      >
-                        Çevre Danışmanlığı
                       </Link>
                     </li>
                     <li>
