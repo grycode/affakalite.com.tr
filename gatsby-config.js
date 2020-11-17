@@ -47,22 +47,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify-cms-paths`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
-          "gatsby-remark-relative-images",
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-responsive-iframe`,
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: `gatsby-remark-images`,
             options: {
-              related: false,
-              noIframeBorder: true,
-              containerClass: "embedVideo-container",
-            },
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
+              linkImagesToOriginal: false,
+              tracedSVG: true,
               showCaptions: true,
             },
           },

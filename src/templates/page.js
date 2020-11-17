@@ -7,10 +7,11 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import cn from "classnames"
 import styles from "./page.module.scss"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function PageTemplate({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { mdx } = data
+  const { frontmatter, body } = mdx
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -22,7 +23,9 @@ export default function PageTemplate({ data }) {
             frontmatter.image ? styles.contentWithRightImage : null
           )}
         >
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div>
+            <MDXRenderer>{body}</MDXRenderer>
+          </div>
           {frontmatter.image && (
             <div>
               <Img
@@ -38,8 +41,8 @@ export default function PageTemplate({ data }) {
 }
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
+    mdx(frontmatter: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug

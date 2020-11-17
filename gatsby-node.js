@@ -6,7 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const postsQuery = await graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         filter: { fileAbsolutePath: { glob: "**/content/blog/**/*.md" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
@@ -28,7 +28,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  postsQuery.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  postsQuery.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
@@ -43,7 +43,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const pagesQuery = await graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         filter: { fileAbsolutePath: { glob: "**/content/pages/**/*.md" } }
       ) {
         edges {
@@ -63,7 +63,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  pagesQuery.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  pagesQuery.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: pageTemplate,
