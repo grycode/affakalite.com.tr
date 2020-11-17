@@ -4,6 +4,7 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { Spin as Hamburger } from "hamburger-react"
 import cn from "classnames"
+import { Minus, Plus } from "../icons"
 import styles from "./header.module.scss"
 
 export default function Header() {
@@ -24,8 +25,17 @@ export default function Header() {
                 alt="logo"
               />
             </Link>
+            <div className={styles.hamburger}>
+              <Hamburger
+                rounded
+                toggled={isOpen}
+                toggle={setOpen}
+                label="Toggle menu"
+                distance="sm"
+              />
+            </div>
             <nav className={styles.nav}>
-              <ul>
+              <ul className={styles.menu}>
                 <li>
                   <Link to="/" activeClassName={styles.active}>
                     Ana Sayfa
@@ -39,35 +49,36 @@ export default function Header() {
                     className={styles.hasSub}
                   >
                     Kurumsal
-                    <ul
-                      style={{ display: kurumsalSubMenu ? "block" : "none" }}
-                      className={styles.subMenu}
-                    >
-                      <li>
-                        <Link to="/hakkimizda" activeClassName={styles.active}>
-                          Hakkimizda
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/kalite-politikamiz"
-                          activeClassName={styles.active}
-                        >
-                          Kalite Politikamız
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/" activeClassName={styles.active}>
-                          Belgelerimiz
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/" activeClassName={styles.active}>
-                          İnsan Kaynakları
-                        </Link>
-                      </li>
-                    </ul>
+                    {kurumsalSubMenu ? <Minus /> : <Plus />}
                   </Link>
+                  <ul
+                    style={{ display: kurumsalSubMenu ? "block" : "none" }}
+                    className={styles.subMenu}
+                  >
+                    <li>
+                      <Link to="/hakkimizda" activeClassName={styles.active}>
+                        Hakkimizda
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/kalite-politikamiz"
+                        activeClassName={styles.active}
+                      >
+                        Kalite Politikamız
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" activeClassName={styles.active}>
+                        Belgelerimiz
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" activeClassName={styles.active}>
+                        İnsan Kaynakları
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link
@@ -79,37 +90,57 @@ export default function Header() {
                     className={styles.hasSub}
                   >
                     Hizmetlerimiz
-                    <ul
-                      style={{
-                        display: hizmetlerimizSubMenu ? "block" : "none",
-                      }}
-                      className={styles.subMenu}
-                    >
-                      <li>
-                        <Link to="/hakkimizda" activeClassName={styles.active}>
-                          Hakkimizda
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/kalite-politikamiz"
-                          activeClassName={styles.active}
-                        >
-                          Kalite Politikamız
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/" activeClassName={styles.active}>
-                          Belgelerimiz
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/" activeClassName={styles.active}>
-                          İnsan Kaynakları
-                        </Link>
-                      </li>
-                    </ul>
+                    {hizmetlerimizSubMenu ? <Minus /> : <Plus />}
                   </Link>
+                  <ul
+                    style={{
+                      display: hizmetlerimizSubMenu ? "block" : "none",
+                    }}
+                    className={styles.subMenu}
+                  >
+                    <li>
+                      <Link
+                        to="/ortak-saglik-ve-guvenlik-birimi"
+                        activeClassName={styles.active}
+                      >
+                        Ortak Sağlık ve Güvenlik Birimi
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/ilk-yardim-egitim-merkezi"
+                        activeClassName={styles.active}
+                      >
+                        İlk Yardım Eğitim Merkezi
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/cevre-danismanligi"
+                        activeClassName={styles.active}
+                      >
+                        Çevre Danışmanlığı
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/cevre-danismanligi"
+                        activeClassName={styles.active}
+                      >
+                        Çevre Danışmanlığı
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/belgelendirme" activeClassName={styles.active}>
+                        Belgelendirme
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/egitimlerimiz" activeClassName={styles.active}>
+                        Eğitimlerimiz
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link to="/teklif-iste" activeClassName={styles.active}>
@@ -133,15 +164,6 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <div className={styles.hamburger}>
-              <Hamburger
-                rounded
-                toggled={isOpen}
-                toggle={setOpen}
-                label="Toggle menu"
-                distance="sm"
-              />
-            </div>
           </Container>
         </header>
       )}
