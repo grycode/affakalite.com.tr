@@ -2,9 +2,8 @@
 title: Uzaktan Eğitim
 slug: uzaktan-egitim
 date: 2020-11-17T16:01:33.046Z
+image: /assets/images/uploads/uzaktan-egitim.png
 ---
-![](/assets/images/uploads/uzaktan-egitim.png)
-
 **Açıklama**
 
 Bu eğitimde Corona Virüsün etkileri, nasıl yayıldığı ve korunma yöntemleri hakkında bilgi verilmektedir.
