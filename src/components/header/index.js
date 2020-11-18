@@ -140,7 +140,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/duyurular" activeClassName={styles.active}>
+                  <Link to="/blog" activeClassName={styles.active}>
                     Duyurular
                   </Link>
                 </li>
