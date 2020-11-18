@@ -25,3 +25,17 @@
     grid-template-columns: 3fr 1fr;
   }
 }
+
+.posts {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a + a {
+    margin-top: 1.5rem;
+  }
+}

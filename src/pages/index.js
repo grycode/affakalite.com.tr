@@ -6,10 +6,11 @@ import Container from "../components/container"
 import Title from "../components/title"
 import ContentBox from "../components/content-box"
 import { Award, CheckCircle, Heart, Smile, Users } from "../components/icons"
-import styles from "./Index.module.scss"
 import CheckListItem from "../components/check-list-item"
+import { graphql, Link } from "gatsby"
+import styles from "./Index.module.scss"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <SEO title="AFFA | İş Güvenliğinde Öncü" />
@@ -84,6 +85,14 @@ export default function Home() {
             </div>
             <div>
               <Title headingLevel="h3">Haberler & Duyurular</Title>
+              <div className={styles.posts}>
+                {data.haberler.edges.map(({ node }) => (
+                  <Link to={`/${node.frontmatter.slug}`}>
+                    <strong>{node.frontmatter.title}</strong>
+                    <small>{node.frontmatter.date}</small>
+                  </Link>
+                ))}
+              </div>
             </div>
           </section>
         </Container>
@@ -91,3 +100,23 @@ export default function Home() {
     </>
   )
 }
+
+export const query = graphql`
+  {
+    haberler: allMdx(
+      filter: { fileAbsolutePath: { glob: "**/content/blog/**/*.md" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 5
+    ) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`
