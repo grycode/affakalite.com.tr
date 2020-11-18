@@ -31,7 +31,7 @@ export default function Footer() {
                 Kalite Politikamız
               </FooterLink>
               <FooterLink link="/belgelerimiz">Belgelerimiz</FooterLink>
-              <FooterLink link="/insan-kaynaklari">İnsan Kaynakları</FooterLink>
+              <FooterLink link="/kariyer">Kariyer</FooterLink>
               <FooterLink link="/kvkk-ve-gizlilik-politikasi">
                 KVKK ve Gizlilik politikası
               </FooterLink>

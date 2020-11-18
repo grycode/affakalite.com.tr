@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -53,6 +54,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
+          `gatsby-remark-relative-images`,
           `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-images`,

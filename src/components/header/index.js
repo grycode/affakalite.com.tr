@@ -74,11 +74,8 @@ export default function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/insan-kaynaklari"
-                        activeClassName={styles.active}
-                      >
-                        İnsan Kaynakları
+                      <Link to="/kariyer" activeClassName={styles.active}>
+                        Kariyer
                       </Link>
                     </li>
                   </ul>
