@@ -5,7 +5,7 @@ module.exports = {
     description:
       "İş ve yangın güvenliği, CE, ATEX ve ISO belgelendirme, SGK, KVKK ve yatırım teşvikleri ile tek çatı danışmanlık",
     url: "https://affakalite.com.tr",
-    image: "/assets/images/ozel-civata-ozel-parcalar-1.jpg",
+    image: "/assets/images/hero.jpg",
     twitterUsername: "@affaisguvenligi",
     siteUrl: `https://affakalite.com.tr`,
   },
@@ -65,6 +65,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: "G-49JC1RRCK5",
+        head: true,
       },
     },
   ],
