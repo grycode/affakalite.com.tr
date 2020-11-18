@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
 import Button from "../button"
 import { Input } from "../form-elements"
 import styles from "./submit-your-cv.module.scss"
@@ -13,7 +13,7 @@ export default function SubmitYourCv() {
       name="IK Formu"
       netlify-honeypot="bot-field"
       method="POST"
-      action="/kariyer/tesekkurler"
+      action="/tesekkurler"
       data-netlify="true"
       onSubmit={e => setSubmitText("Gönderiliyor...")}
     >
