@@ -19,39 +19,41 @@ export default function SubmitYourCv() {
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="IK Formu" />
-      <div>
-        <Input
-          type="text"
-          name="name"
-          label="Ad Soyad"
-          placeholder="Ad Soyad"
-          required
-        />
-        <Input
-          type="email"
-          name="email"
-          label="E-Posta Adresiniz"
-          placeholder="E-Posta Adresiniz"
-          required
-        />
-      </div>
-      <div>
-        <Input
-          type="text"
-          name="phone"
-          label="Telefon Numaraniz"
-          placeholder="Telefon Numaraniz"
-          required
-        />
+      <div className={styles.row}>
+        <div>
+          <Input
+            type="text"
+            name="name"
+            label="Ad Soyad"
+            placeholder="Ad Soyad"
+            required
+          />
+          <Input
+            type="email"
+            name="email"
+            label="E-Posta Adresiniz"
+            placeholder="E-Posta Adresiniz"
+            required
+          />
+        </div>
+        <div>
+          <Input
+            type="text"
+            name="phone"
+            label="Telefon Numaraniz"
+            placeholder="Telefon Numaraniz"
+            required
+          />
 
-        <Input
-          type="file"
-          name="cv"
-          label="CV'nizi yükleyin (doc, pdf) "
-          placeholder="CV'nizi yükleyin (doc, pdf)"
-          accept=".pdf,.doc,.docx,.rtf"
-          required
-        />
+          <Input
+            type="file"
+            name="cv"
+            label="CV'nizi yükleyin (doc, pdf) "
+            placeholder="CV'nizi yükleyin (doc, pdf)"
+            accept=".pdf,.doc,.docx,.rtf"
+            required
+          />
+        </div>
       </div>
       <p className={styles.warning}>
         Gönder butonuna basarak, CV (Özgeçmiş) paylaşmanız durumunda, kişisel

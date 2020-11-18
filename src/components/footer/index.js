@@ -35,7 +35,7 @@ export default function Footer() {
               <FooterLink link="/kvkk-ve-gizlilik-politikasi">
                 KVKK ve Gizlilik politikası
               </FooterLink>
-              <FooterLink link="/hakkimizda">Uzaktan Eğitim</FooterLink>
+              <FooterLink link="/uzaktan-egitim">Uzaktan Eğitim</FooterLink>
             </ul>
           </div>
 

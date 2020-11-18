@@ -15,10 +15,11 @@ export default function PostPreview({ title, slug, excerpt, date, image }) {
         <div className={styles.image}>
           <Img fixed={image} alt={title} />
         </div>
-        <div>
+        <div className={styles.excerpt}>
           <Title className={styles.title} headingLevel="h4">
             {title}
           </Title>
+          <small>{date}</small>
           <p>{excerpt}</p>
         </div>
       </Link>

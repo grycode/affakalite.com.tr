@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.iconBoxes {
+  svg {
+    margin-right: 0.5rem;
+  }
+}
