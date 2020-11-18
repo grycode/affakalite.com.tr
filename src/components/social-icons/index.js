@@ -8,7 +8,7 @@ export default function SocialIcons({ className }) {
     <ul className={cn(styles.socialLinks, className)}>
       <li>
         <a
-          href="https://www.facebook.com/ozelcivata"
+          href="https://www.facebook.com/affa.kalite"
           target="_blank"
           rel="noopener noreferrer"
           title="Facebook"
@@ -18,7 +18,7 @@ export default function SocialIcons({ className }) {
       </li>
       <li>
         <a
-          href="https://twitter.com/ozelcivata"
+          href="https://twitter.com/affaisguvenligi"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter"
@@ -28,7 +28,7 @@ export default function SocialIcons({ className }) {
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/%C3%B6zel-c%C4%B1vata-251262133/"
+          href="https://www.linkedin.com/company/affa-i-g-venli-i-kalite-e-itim-dani-manlik-ltd-ti-/about/"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"

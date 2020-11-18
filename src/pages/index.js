@@ -21,7 +21,7 @@ export default function Home({ data }) {
             <header>
               <Title headingLevel="h3">Hizmetlerimiz</Title>
             </header>
-            <div className={styles.services}>
+            <div id="hizmetlerimiz" className={styles.services}>
               <ContentBox
                 icon={<Users />}
                 title="Ortak Sağlık ve Güvenlik Birimi"
@@ -64,7 +64,7 @@ export default function Home({ data }) {
           </section>
           <section className={styles.whyUs}>
             <div>
-              <Title headingLevel="h3">Hizmetlerimiz</Title>
+              <Title headingLevel="h3">Neden AFFA Group?</Title>
               <ul>
                 <CheckListItem>Sektörün ilk iş güvenliği şirketi</CheckListItem>
                 <CheckListItem>

@@ -33,7 +33,7 @@ const Hero = () => (
               İş ve yangın güvenliği, CE, ATEX ve ISO belgelendirme, SGK, KVKK
               danışmanlığı ile tek çatı danışmanlık.
             </Title>
-            <Button to="/hizmetlerimiz" type="secondary">
+            <Button to="#hizmetlerimiz" type="secondary">
               Hizmetlerimiz
             </Button>
           </Container>

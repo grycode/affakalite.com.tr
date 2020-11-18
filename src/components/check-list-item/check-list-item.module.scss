@@ -6,12 +6,19 @@
     margin-top: 1rem;
   }
 
+  * {
+    display: flex;
+  }
+}
+
+.icon {
+  margin-right: 0.5rem;
+
   svg {
     background-color: var(--c-primary);
     color: white;
     padding: 4px;
     box-sizing: content-box;
     border-radius: 1rem;
-    margin-right: 0.5rem;
   }
 }

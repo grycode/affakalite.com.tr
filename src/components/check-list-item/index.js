@@ -5,8 +5,10 @@ import styles from "./check-list-item.module.scss"
 export default function CheckListItem({ children }) {
   return (
     <li className={styles.item}>
-      <Check />
-      {children}
+      <span className={styles.icon}>
+        <Check />
+      </span>
+      <span>{children}</span>
     </li>
   )
 }
