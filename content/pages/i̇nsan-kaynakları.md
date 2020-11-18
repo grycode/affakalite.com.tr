@@ -1,6 +1,6 @@
 ---
-title: İnsan Kaynakları
-slug: insan-kaynaklari
+title: Kariyer
+slug: kariyer
 date: 2020-11-17T17:34:38.174Z
 ---
 import SubmitYourCv from '../../src/components/submit-your-cv'
