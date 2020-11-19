@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Affa Kalite`,
+        name: `AFFA Kalite`,
         short_name: `AFFA Kalite`,
         start_url: `/`,
         background_color: `#f7f0eb`,
@@ -31,6 +31,7 @@ module.exports = {
         icon: `${__dirname}/static/assets/images/icon.png`,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
