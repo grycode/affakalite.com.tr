@@ -8,7 +8,7 @@ const useSiteMetadata = () => {
           title
           titleTemplate
           description
-          url
+          siteUrl
           image
           twitterUsername
         }
