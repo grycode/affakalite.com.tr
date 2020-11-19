@@ -1,13 +1,16 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import useSiteMetadata from "../../hooks/use-site-metadata"
+import { useLocation } from "@reach/router"
 
-const SEO = ({ title, path, description, image, article }) => {
+const SEO = ({ title, description, image, article }) => {
+  const { pathname } = useLocation()
+
   const {
     title: defaultTitle,
     titleTemplate,
     description: defaultDescription,
-    url: siteUrl,
+    siteUrl,
     image: defaultImage,
     twitterUsername,
   } = useSiteMetadata()
@@ -16,7 +19,7 @@ const SEO = ({ title, path, description, image, article }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${path}`,
+    url: `${siteUrl}${pathname}`,
   }
 
   return (

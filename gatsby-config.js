@@ -4,7 +4,6 @@ module.exports = {
     titleTemplate: "%s | AFFA Kalite",
     description:
       "İş ve yangın güvenliği, CE, ATEX ve ISO belgelendirme, SGK, KVKK ve yatırım teşvikleri ile tek çatı danışmanlık",
-    url: "https://affakalite.com.tr",
     image: "/assets/images/hero.jpg",
     twitterUsername: "@affaisguvenligi",
     siteUrl: `https://affakalite.com.tr`,
