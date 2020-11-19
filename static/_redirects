@@ -5,3 +5,6 @@
 /hizmetlerimiz/cevre-danismanligi /cevre-danismanligi
 /hizmetlerimiz/belgelendirme /belgelendirme
 /hizmetlerimiz/egitimlerimiz /egitimlerimiz
+
+# affakalite.netlify.app > affakalite.com.tr
+https://affakalite.netlify.app https://affakalite.com.tr 301!
