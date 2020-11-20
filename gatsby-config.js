@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://affakalite.com.tr`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
