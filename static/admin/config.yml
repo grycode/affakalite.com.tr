@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: grycode/affakalite
+  repo: grycode/affakalite.com.tr
 media_folder: static/assets/images/uploads
 public_folder: /assets/images/uploads
 locale: "tr"
