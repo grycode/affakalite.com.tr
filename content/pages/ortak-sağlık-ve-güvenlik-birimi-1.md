@@ -1,7 +1,7 @@
 ---
 title: Ortak Sağlık ve Güvenlik Birimi
 slug: ortak-saglik-ve-guvenlik-birimi
-date: 2023-01-12T10:55:24.808Z
+date: 2023-01-13T07:30:10.707Z
 image: /assets/images/uploads/t-map.jpg
 ---
 AFFA GROUP 2006 yılından beri yürütmekte olduğu iş güvenliği çalışmalarını, 2012 yılında kurmuş olduğu AFFA İSTANBUL OSGB üzerinden profesyonel bir şekilde sunmaya devam etmektedir.\
