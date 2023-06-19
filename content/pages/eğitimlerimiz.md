@@ -4,7 +4,7 @@ slug: egitimlerimiz
 date: 2020-11-17T15:59:56.105Z
 image: /assets/images/uploads/affa-ikü.jpg
 ---
-\     **\    !!! SON ONLINE EĞİTİMLER !!!**
+ **  !!! SON ONLINE EĞİTİMLER !!!** 
 
 * 90 Saat Uzaktan (asenkron) Eğitim
 * 90 Saat Uzaktan (senkron) Eğitim
@@ -12,7 +12,7 @@ image: /assets/images/uploads/affa-ikü.jpg
 
 **T﻿.C. İSTANBUL KÜLTÜR ÜNİVERSİTESİ TARAFINDAN VERİLEN EĞİTİMLERDE STAJ İŞLEMLERİNE AFFA OLARAK DESTEK VERİYOR VE GELECEĞİN UZMANLARININ SAHAYA HAZIRLANMALARINDA YARDIMCI OLUYORUZ.** 
 
-H﻿ızlı kayıt için [buraya tıklayınız](https://igesib.iku.edu.tr/tr/b-ve-c-sinifi-guvenligi-uzmanligi-egitimi).
+## H﻿ızlı kayıt için [buraya tıklayınız](https://igesib.iku.edu.tr/tr/b-ve-c-sinifi-guvenligi-uzmanligi-egitimi).
 
 **İŞ GÜVENLİĞİ NEDİR ?** 
 
