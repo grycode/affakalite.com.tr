@@ -6,19 +6,13 @@ image: /assets/images/uploads/affa-ikü.jpg
 ---
 \     **\    !!! SON ONLINE EĞİTİMLER !!!**
 
-
-
 * 90 Saat Uzaktan (asenkron) Eğitim
 * 90 Saat Uzaktan (senkron) Eğitim
 * 40 Saat Uygulama Eğitim
 
-
-
 **T﻿.C. İSTANBUL KÜLTÜR ÜNİVERSİTESİ TARAFINDAN VERİLEN EĞİTİMLERDE STAJ İŞLEMLERİNE AFFA OLARAK DESTEK VERİYOR VE GELECEĞİN UZMANLARININ SAHAYA HAZIRLANMALARINDA YARDIMCI OLUYORUZ.** 
 
 H﻿ızlı kayıt için [buraya tıklayınız](https://igesib.iku.edu.tr/tr/b-ve-c-sinifi-guvenligi-uzmanligi-egitimi).
-
-
 
 **İŞ GÜVENLİĞİ NEDİR ?** 
 
@@ -32,20 +26,14 @@ H﻿ızlı kayıt için [buraya tıklayınız](https://igesib.iku.edu.tr/tr/b-ve
 
 T.C. Çalışma Ve Sosyal Güvenlik Bakanlığı onaylı İş Güvenliği Uzmanı olmak isteyen mühendis ve teknik elamanlara (2 yıllık İSG Mezunları) mesleki becerilerini işyerlerinde uygulayabilmeleri için gerekli iş sağlığı ve güvenliği bilgisini kazandırmak.  Nasıl İş Güvenliği Uzmanı Olunur ve İş Güvenliği Uzmanlığı Sertifikası Alınır? Üniversitelerin ilgili teknik bölümlerinden mezun kişiler, Bakanlıkça yetkilendirilen eğitim kurumlarında 35 günlük eğitim programını tamamlayarak ÖSYM tarafından yılda 2 kez yapılan İSG Sınavlarına katılır ve başarılı olmaları durumunda C Sınıfı İş Güvenliği Uzmanı unvanını ve İş Güvenliği Uzmanlığı sertifikasını alırlar.  C sınıfı iş güvenliği uzmanları; 3 yıl fiilen çalışarak veya İş Güvenliği Yüksek Lisans Programını tamamlayarak B Sınıfı IGU Eğitimlerine katılmaya hak kazanırlar ve ilgili sınavda başarılı olmaları durumunda B Sınıfına yükselebilirler.  B sınıfı iş güvenliği uzmanları; 4 yıl fiilen çalışarak A Sınıfı IGU Eğitimlerine katılmaya hak kazanır ve ilgili sınavda başarılı olmaları durumunda A Sınıfına yükselebilirler.
 
-
-
-
-
 * **A Sınıfı İş Güvenliği Uzmanlığı Eğitimi**
 * **B Sınıfı İş Güvenliği Uzmanlığı Eğitimi**
 * **C Sınıfı İş Güvenliği Uzmanlığı Eğitimi**
 
-
-
 ### İŞ GÜVENLİĞİ UZMANLIĞI EĞİTİMİ KONU BAŞLIKLARI:
 
 Ders isimleri ve sıra numaraları bakanlık tarafından belirlenmiş bulunmaktadır:\
-**1.**    Açılış, Tanışma, Programın Tanıtımı ve Ön Test Uygulaması\
+**1.**  Açılış, Tanışma, Programın Tanıtımı ve Ön Test Uygulaması\
 **2.** İş Sağlığı ve Güvenliğinin Kavram ve Kurallarının Gelişi\
 **3.** İş Sağlığı ve Güvenliğine Genel Bakış ve Güvenlik Kültürü\
 **4.** Türkiye’de ve dünyada iş sağlığı ve güvenliği\
@@ -97,7 +85,5 @@ Ders isimleri ve sıra numaraları bakanlık tarafından belirlenmiş bulunmakta
 **50.** İş yerinde pratik uygulamalar
 
 <!--EndFragment-->
-
-
 
 ![]()
