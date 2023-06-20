@@ -16,7 +16,8 @@ image: /assets/images/uploads/affa-ikü.jpg
 
 ## H﻿ızlı kayıt için 0850 495 56 06[](https://igesib.iku.edu.tr/tr/b-ve-c-sinifi-guvenligi-uzmanligi-egitimi)
 
-İşyerlerinde işin yürütümü sırasında, çeşitli sebeplerden kaynaklanan, çalışanların sağlığına ve güvenliğine zarar verebilecek durumlardan korunmak amacıyla yapılan sistemli ve bilimsel çalışmalardır. 
+
+ 
 
 **İŞ GÜVENLİĞİ UZMANI KİMDİR?** 
 
